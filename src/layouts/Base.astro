@@ -18,27 +18,221 @@ const {
     <meta name="description" content={description} />
     <link rel="canonical" href={Astro.url} />
     <title>{title}</title>
+
+    <style is:global>
+      :root {
+        --ink: #24313a;
+        --muted: #66737b;
+        --cream: #f7f3eb;
+        --sand: #e8ddcb;
+        --terracotta: #a95435;
+        --terracotta-dark: #843f29;
+        --white: #ffffff;
+        --max-width: 1120px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: Georgia, 'Times New Roman', serif;
+        color: var(--ink);
+        background: var(--white);
+        line-height: 1.7;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .site-header {
+        background: var(--cream);
+        border-bottom: 1px solid var(--sand);
+      }
+
+      .header-inner {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 22px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 32px;
+      }
+
+      .site-name {
+        text-decoration: none;
+        font-size: 1.45rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        white-space: nowrap;
+      }
+
+      .main-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+      }
+
+      .main-nav a {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.95rem;
+        font-weight: 600;
+      }
+
+      .main-nav a:hover,
+      .footer-links a:hover {
+        color: var(--terracotta);
+      }
+
+      main {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 64px 24px 80px;
+      }
+
+      main section {
+        max-width: 820px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.2;
+        color: var(--ink);
+      }
+
+      h1 {
+        font-size: clamp(2.4rem, 5vw, 4.6rem);
+        margin: 0.25em 0 0.4em;
+        letter-spacing: -0.035em;
+      }
+
+      h2 {
+        font-size: clamp(1.6rem, 3vw, 2.35rem);
+        margin-top: 2.2em;
+      }
+
+      p {
+        font-size: 1.08rem;
+      }
+
+      main > section > p:first-child {
+        color: var(--terracotta);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      main a {
+        color: var(--terracotta-dark);
+        font-weight: 700;
+      }
+
+      .site-footer {
+        background: var(--ink);
+        color: var(--white);
+      }
+
+      .footer-inner {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 42px 24px;
+      }
+
+      .footer-brand {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin: 0 0 4px;
+      }
+
+      .footer-tagline {
+        margin: 0 0 24px;
+        color: #d7dde0;
+      }
+
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px 24px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.9rem;
+      }
+
+      .footer-links a {
+        color: var(--white);
+        text-decoration: none;
+      }
+
+      .copyright {
+        margin-top: 28px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.82rem;
+        color: #b9c1c5;
+      }
+
+      @media (max-width: 760px) {
+        .header-inner {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .main-nav {
+          gap: 12px 18px;
+        }
+
+        main {
+          padding-top: 42px;
+        }
+      }
+    </style>
   </head>
 
   <body>
-    <header>
-      <a href="/">48 Hours in California</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="site-name" href="/">48 Hours in California</a>
 
-      <nav aria-label="Main navigation">
-        <a href="/itineraries/">48-Hour Getaways</a>
-        <a href="/destinations/">Destinations</a>
-        <a href="/trip-ideas/">Trip Ideas</a>
-        <a href="/about/">About</a>
-      </nav>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="/itineraries/">48-Hour Getaways</a>
+          <a href="/destinations/">Destinations</a>
+          <a href="/trip-ideas/">Trip Ideas</a>
+          <a href="/about/">About</a>
+        </nav>
+      </div>
     </header>
 
     <main>
       <slot />
     </main>
 
-    <footer>
-      <p>48 Hours in California</p>
-      <p>Practical California getaways, planned for real life.</p>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-brand">48 Hours in California</p>
+        <p class="footer-tagline">
+          Practical California getaways, planned for real life.
+        </p>
+
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy Policy</a>
+          <a href="/terms/">Terms of Use</a>
+          <a href="/affiliate-disclosure/">Affiliate Disclosure</a>
+        </nav>
+
+        <p class="copyright">
+          © 2026 48 Hours in California
+        </p>
+      </div>
     </footer>
   </body>
 </html>
