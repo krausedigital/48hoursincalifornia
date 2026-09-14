@@ -1,32 +1,25 @@
 ---
+import Base from '../layouts/Base.astro';
+
 const pageTitle = '48 Hours in California';
 const pageDescription =
   'Practical 48-hour California travel itineraries and weekend getaway guides.';
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="description" content={pageDescription} />
-    <title>{pageTitle}</title>
-  </head>
+<Base title={pageTitle} description={pageDescription}>
+  <section>
+    <p>Practical California Getaways</p>
 
-  <body>
-    <main>
-      <p>Practical California Getaways</p>
+    <h1>48 Hours in California</h1>
 
-      <h1>48 Hours in California</h1>
+    <h2>Two days. One California getaway. Make the most of it.</h2>
 
-      <h2>Two days. One California getaway. Make the most of it.</h2>
+    <p>
+      Practical two-day itineraries for California escapes—where to stay,
+      what to see, where to eat, and how to spend your time without spending
+      hours planning the trip.
+    </p>
 
-      <p>
-        Practical two-day itineraries for California escapes—where to stay,
-        what to see, where to eat, and how to spend your time without spending
-        hours planning the trip.
-      </p>
-
-      <a href="/itineraries/">Explore 48-Hour Getaways</a>
-    </main>
-  </body>
-</html>
+    <a href="/itineraries/">Explore 48-Hour Getaways</a>
+  </section>
+</Base>
