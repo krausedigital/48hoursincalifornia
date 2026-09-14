@@ -1,0 +1,44 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = '48 Hours in California',
+  description = 'Practical 48-hour California travel itineraries and weekend getaway guides.',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={Astro.url} />
+    <title>{title}</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="/">48 Hours in California</a>
+
+      <nav aria-label="Main navigation">
+        <a href="/itineraries/">48-Hour Getaways</a>
+        <a href="/destinations/">Destinations</a>
+        <a href="/trip-ideas/">Trip Ideas</a>
+        <a href="/about/">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer>
+      <p>48 Hours in California</p>
+      <p>Practical California getaways, planned for real life.</p>
+    </footer>
+  </body>
+</html>
