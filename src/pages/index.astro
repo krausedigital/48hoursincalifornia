@@ -44,4 +44,169 @@ const pageDescription =
       Plan 48 Hours in Paso Robles
     </a>
   </section>
+
+  <section>
+    <p>Find Your Kind of Getaway</p>
+
+    <h2>Choose Your California Escape</h2>
+
+    <p>
+      Start with the kind of weekend you have in mind, then find a
+      48-hour getaway that fits.
+    </p>
+
+    <div>
+      <h3>Wine Country</h3>
+      <p>
+        Vineyards, tasting rooms, good food, and California landscapes
+        made for slowing down.
+      </p>
+      <a href="/destinations/">Explore Wine Country</a>
+    </div>
+
+    <div>
+      <h3>The California Coast</h3>
+      <p>
+        Beaches, harbors, ocean views, and memorable stops along
+        California's coastline.
+      </p>
+      <a href="/destinations/">Explore the Coast</a>
+    </div>
+
+    <div>
+      <h3>California Towns &amp; Cities</h3>
+      <p>
+        Walkable downtowns, local restaurants, history, and places worth
+        spending a weekend getting to know.
+      </p>
+      <a href="/destinations/">Explore Towns &amp; Cities</a>
+    </div>
+  </section>
+
+  <section>
+    <p>More California Getaways</p>
+
+    <h2>Find Your Next 48 Hours</h2>
+
+    <p>
+      From small coastal towns to wine country and classic California
+      destinations, there is always another weekend worth considering.
+    </p>
+
+    <div>
+      <img
+        src="/images/cambria-moonstone-beach.jpg"
+        alt="Moonstone Beach along the Cambria coastline"
+        style="width: 100%; height: auto; display: block;"
+      />
+      <h3>Cambria</h3>
+      <a href="/itineraries/cambria/">Explore Cambria</a>
+    </div>
+
+    <div>
+      <img
+        src="/images/monterey-harbor-hero.jpg"
+        alt="Monterey Harbor on the California coast"
+        style="width: 100%; height: auto; display: block;"
+      />
+      <h3>Monterey</h3>
+      <a href="/itineraries/monterey/">Explore Monterey</a>
+    </div>
+
+    <div>
+      <img
+        src="/images/big-sur-highway-1-hero.jpg"
+        alt="Highway 1 along the Big Sur coastline"
+        style="width: 100%; height: auto; display: block;"
+      />
+      <h3>Big Sur</h3>
+      <a href="/itineraries/big-sur/">Explore Big Sur</a>
+    </div>
+
+    <div>
+      <img
+        src="/images/santa-barbara-hero.jpg"
+        alt="Santa Barbara on the California coast"
+        style="width: 100%; height: auto; display: block;"
+      />
+      <h3>Santa Barbara</h3>
+      <a href="/itineraries/santa-barbara/">Explore Santa Barbara</a>
+    </div>
+
+    <div>
+      <img
+        src="/images/santa-cruz-boardwalk.jpg"
+        alt="Santa Cruz Beach Boardwalk"
+        style="width: 100%; height: auto; display: block;"
+      />
+      <h3>Santa Cruz</h3>
+      <a href="/itineraries/santa-cruz/">Explore Santa Cruz</a>
+    </div>
+
+    <div>
+      <img
+        src="/images/sonoma-bedrock-vineyard.jpg"
+        alt="Vineyard landscape in Sonoma wine country"
+        style="width: 100%; height: auto; display: block;"
+      />
+      <h3>Sonoma</h3>
+      <a href="/itineraries/sonoma/">Explore Sonoma</a>
+    </div>
+
+    <p>
+      <a href="/itineraries/">View All 48-Hour Getaways</a>
+    </p>
+  </section>
 </Base>
+
+<style>
+  section {
+    margin-bottom: 72px;
+  }
+
+  section > p:first-child {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  section > img {
+    margin: 24px 0;
+    border-radius: 6px;
+  }
+
+  section > div {
+    margin: 32px 0;
+  }
+
+  section > div img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 16px;
+    border-radius: 6px;
+  }
+
+  section > div h3 {
+    margin-bottom: 8px;
+  }
+
+  @media (min-width: 760px) {
+    section:last-of-type {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 32px;
+    }
+
+    section:last-of-type > p,
+    section:last-of-type > h2 {
+      grid-column: 1 / -1;
+    }
+
+    section:last-of-type > div {
+      margin: 0;
+    }
+  }
+</style>
