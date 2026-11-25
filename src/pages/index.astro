@@ -1,26 +1,50 @@
 ---
 import Base from '../layouts/Base.astro';
 
-const pageTitle = '48 Hours in California';
+const pageTitle = '48 Hours in California | Weekend Getaways & Travel Guides';
+
 const pageDescription =
-  'Practical 48-hour California travel itineraries and weekend getaway guides.';
+  'Discover relaxing California getaways for couples and independent travelers. Explore coastal towns, wine country, weekend escapes and longer California adventures.';
+
+// Seasonal homepage hero
+const heroImage = '/images/hero-california-coast-original.webp';
+const heroAlt = 'Illustration of the California coastline with rugged cliffs, blue Pacific waters and golden sunset light';
 ---
 
 <Base title={pageTitle} description={pageDescription}>
-  <section>
-    <p>Practical California Getaways</p>
 
-    <h1>48 Hours in California</h1>
+  <section class="homepage-hero">
 
-    <h2>Two days. One California getaway. Make the most of it.</h2>
+    <img
+      class="hero-image"
+      src={heroImage}
+      alt={heroAlt}
+      loading="eager"
+      fetchpriority="high"
+    />
 
-    <p>
-      Practical two-day itineraries for California escapes—where to stay,
-      what to see, where to eat, and how to spend your time without spending
-      hours planning the trip.
-    </p>
+    <div class="hero-content">
 
-    <a href="/itineraries/">Explore 48-Hour Getaways</a>
+      <h1>48 Hours in California</h1>
+
+      <h2>Discover More. Rush Less.</h2>
+
+      <p class="hero-tagline">
+        Beautiful places. Memorable experiences.
+        Time well spent together.
+      </p>
+
+      <p class="hero-introduction">
+        From relaxing weekend escapes to longer California adventures,
+        discover the Golden State at your own pace.
+      </p>
+
+      <a class="hero-button" href="/itineraries/">
+        Explore 48-Hour Getaways
+      </a>
+
+    </div>
+
   </section>
 
   <section>
@@ -160,6 +184,84 @@ const pageDescription =
 </Base>
 
 <style>
+
+  /* Homepage seasonal hero */
+
+  .homepage-hero {
+    margin-bottom: 64px;
+    text-align: center;
+  }
+
+  .homepage-hero > .hero-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 1;
+    object-fit: contain;
+    display: block;
+    margin: 0;
+    border-radius: 8px;
+  }
+
+  .homepage-hero > .hero-content {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 32px 16px 12px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
+    line-height: 1.15;
+    margin: 0 0 12px;
+    letter-spacing: -0.025em;
+  }
+
+  .hero-content h2 {
+    font-size: clamp(1.5rem, 3.5vw, 2.3rem);
+    line-height: 1.25;
+    font-weight: 600;
+    color: #36594d;
+    margin: 0 0 22px;
+  }
+
+  .hero-tagline {
+    font-size: clamp(1.05rem, 2vw, 1.25rem);
+    line-height: 1.6;
+    font-weight: 500;
+    margin: 0 auto 12px;
+  }
+
+  .hero-introduction {
+    max-width: 680px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin: 0 auto 26px;
+  }
+
+  .hero-content .hero-button {
+    display: inline-block;
+    padding: 14px 26px;
+    background-color: #36594d;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+  }
+
+  .hero-content .hero-button:hover {
+    background-color: #28443a;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .hero-content .hero-button:focus-visible {
+    outline: 3px solid #36594d;
+    outline-offset: 4px;
+  }
+
+  /* Existing homepage sections */
+
   section {
     margin-bottom: 72px;
   }
@@ -193,7 +295,28 @@ const pageDescription =
     margin-bottom: 8px;
   }
 
+  @media (max-width: 600px) {
+
+    .homepage-hero {
+      margin-bottom: 48px;
+    }
+
+    .homepage-hero > .hero-content {
+      padding: 24px 8px 8px;
+    }
+
+    .hero-introduction {
+      font-size: 1rem;
+    }
+
+    .hero-content .hero-button {
+      padding: 12px 20px;
+    }
+
+  }
+
   @media (min-width: 760px) {
+
     section:last-of-type {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -208,5 +331,7 @@ const pageDescription =
     section:last-of-type > div {
       margin: 0;
     }
+
   }
+
 </style>
