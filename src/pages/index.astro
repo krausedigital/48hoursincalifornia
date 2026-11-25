@@ -19,9 +19,15 @@ const heroAlt = 'Illustration of the California coastline with rugged cliffs, bl
       class="hero-image"
       src={heroImage}
       alt={heroAlt}
+      width="1774"
+      height="887"
       loading="eager"
       fetchpriority="high"
     />
+
+    <p class="hero-caption">
+      AI-generated illustration inspired by the California coast.
+    </p>
 
     <div class="hero-content">
 
@@ -185,10 +191,57 @@ const heroAlt = 'Illustration of the California coastline with rugged cliffs, bl
 
 <style>
 
+  /* Homepage-only layout refinements */
+
+  :global(main:has(> .homepage-hero)) {
+    padding-top: 32px;
+  }
+
+  section {
+    width: 100%;
+    max-width: 820px;
+    margin: 0 auto 64px;
+  }
+
+  section > p:first-child {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 0 0 12px;
+  }
+
+  section > h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  section > img {
+    margin: 24px 0;
+    border-radius: 6px;
+  }
+
+  section > div {
+    margin: 32px 0;
+  }
+
+  section > div img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 16px;
+    border-radius: 6px;
+  }
+
+  section > div h3 {
+    margin-bottom: 8px;
+  }
+
   /* Homepage seasonal hero */
 
   .homepage-hero {
-    margin-bottom: 64px;
+    margin-bottom: 56px;
     text-align: center;
   }
 
@@ -202,16 +255,26 @@ const heroAlt = 'Illustration of the California coastline with rugged cliffs, bl
     border-radius: 8px;
   }
 
+  .homepage-hero > .hero-caption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 400;
+    color: #66737b;
+    text-align: right;
+    line-height: 1.4;
+    margin: 6px 0 0;
+  }
+
   .homepage-hero > .hero-content {
     max-width: 850px;
     margin: 0 auto;
-    padding: 32px 16px 12px;
+    padding: 16px 16px 8px;
   }
 
   .hero-content h1 {
     font-size: clamp(2rem, 4.5vw, 3.2rem);
     line-height: 1.15;
-    margin: 0 0 12px;
+    margin: 0 0 10px;
     letter-spacing: -0.025em;
   }
 
@@ -220,21 +283,21 @@ const heroAlt = 'Illustration of the California coastline with rugged cliffs, bl
     line-height: 1.25;
     font-weight: 600;
     color: #36594d;
-    margin: 0 0 22px;
+    margin: 0 0 16px;
   }
 
   .hero-tagline {
     font-size: clamp(1.05rem, 2vw, 1.25rem);
     line-height: 1.6;
     font-weight: 500;
-    margin: 0 auto 12px;
+    margin: 0 auto 10px;
   }
 
   .hero-introduction {
     max-width: 680px;
     font-size: 1.1rem;
-    line-height: 1.7;
-    margin: 0 auto 26px;
+    line-height: 1.6;
+    margin: 0 auto 20px;
   }
 
   .hero-content .hero-button {
@@ -260,49 +323,24 @@ const heroAlt = 'Illustration of the California coastline with rugged cliffs, bl
     outline-offset: 4px;
   }
 
-  /* Existing homepage sections */
-
-  section {
-    margin-bottom: 72px;
-  }
-
-  section > p:first-child {
-    font-size: 0.85rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-  }
-
-  section > img {
-    margin: 24px 0;
-    border-radius: 6px;
-  }
-
-  section > div {
-    margin: 32px 0;
-  }
-
-  section > div img {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-    display: block;
-    margin-bottom: 16px;
-    border-radius: 6px;
-  }
-
-  section > div h3 {
-    margin-bottom: 8px;
-  }
+  /* Mobile presentation */
 
   @media (max-width: 600px) {
 
-    .homepage-hero {
+    :global(main:has(> .homepage-hero)) {
+      padding-top: 24px;
+    }
+
+    section {
       margin-bottom: 48px;
     }
 
+    .homepage-hero {
+      margin-bottom: 40px;
+    }
+
     .homepage-hero > .hero-content {
-      padding: 24px 8px 8px;
+      padding: 16px 4px 8px;
     }
 
     .hero-introduction {
@@ -315,17 +353,24 @@ const heroAlt = 'Illustration of the California coastline with rugged cliffs, bl
 
   }
 
+  /* Desktop destination grid */
+
   @media (min-width: 760px) {
 
     section:last-of-type {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 32px;
+      gap: 24px 32px;
     }
 
     section:last-of-type > p,
     section:last-of-type > h2 {
       grid-column: 1 / -1;
+    }
+
+    section:last-of-type > p:first-child,
+    section:last-of-type > h2 {
+      margin-bottom: 0;
     }
 
     section:last-of-type > div {
