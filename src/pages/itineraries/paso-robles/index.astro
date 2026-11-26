@@ -1,62 +1,158 @@
 ---
 import Base from '../../../layouts/Base.astro';
 
-const pageTitle = '48 Hours in Paso Robles | 48 Hours in California';
+const pageTitle = '48 Hours in Paso Robles: A Relaxed 2-Day Itinerary';
 const pageDescription =
-  'A practical 48-hour Paso Robles itinerary with wine country, downtown dining, where to stay, and options for extending your California getaway.';
+  'Plan a relaxed 2-day Paso Robles getaway with scenic wineries, downtown dining, hotel recommendations, practical travel tips and optional coastal adventures.';
 ---
 
 <Base title={pageTitle} description={pageDescription}>
   <article>
-    <p>48-Hour California Getaway</p>
+    <p class="eyebrow">48-Hour California Getaway</p>
 
     <h1>48 Hours in Paso Robles</h1>
 
-    <h2>Two days of wine country, good food, and an easygoing downtown.</h2>
+    <p class="itinerary-subtitle">
+      Two days of wine country, good food, and an easygoing downtown.
+    </p>
 
-<img
-  src="/images/paso-robles-vineyard-hero.jpg"
-  alt="Vineyards stretching across the rolling hills of Paso Robles wine country"
-  class="itinerary-hero"
-/>
+    <img
+      src="/images/paso-robles-vineyard-hero.jpg"
+      alt="Vineyards stretching across the rolling hills of Paso Robles wine country"
+      class="itinerary-hero"
+      fetchpriority="high"
+    />
 
     <p>
-      Paso Robles is the kind of California destination that works especially
-      well for a short getaway. Vineyards roll across the countryside, tasting
-      rooms surround a walkable downtown, and some of the region's best
-      experiences are close enough together that you don't have to spend your
-      weekend racing from one stop to another.
+      Somewhere between California's coastal communities and the rolling
+      hills of its inland wine country lies Paso Robles, a destination
+      where a short getaway can feel considerably longer.
     </p>
 
     <p>
-      This itinerary isn't designed to show you everything Paso Robles has to
-      offer. <strong>It's designed to help you have a really good two days
-      there.</strong>
+      Vineyards stretch across oak-covered hills, tasting rooms surround
+      a walkable downtown, and some of the region's most rewarding
+      experiences are close enough together that you don't have to
+      spend your weekend racing from one stop to another.
     </p>
 
-    <h2>At a Glance</h2>
-
-    <p><strong>Best for:</strong> Wine lovers, couples, food-focused weekends, and relaxed getaways</p>
-    <p><strong>Ideal trip:</strong> 2 nights / 48 hours</p>
-    <p><strong>Home base:</strong> Downtown Paso Robles</p>
-    <p><strong>Getting around:</strong> Walk downtown; car or hired transportation for wine country</p>
-    <p><strong>Reserve ahead:</strong> Hotel, winery tastings, and Saturday dinner</p>
-    <p><strong>Best pace:</strong> Two major winery experiences in one day, with time to relax</p>
-    <p><strong>Have more time?</strong> Add Tin City for a few hours or Cambria and the coast for another day</p>
-
-    <h2>Where to Stay</h2>
+    <p>
+      Whether you're visiting from elsewhere in California or including
+      Paso Robles in a longer American road trip, two nights provide
+      enough time to discover the area's character without feeling
+      hurried.
+    </p>
 
     <p>
-      For this itinerary, staying close to downtown makes sense. You'll be
-      able to leave the car behind for much of the first evening and again
-      after returning from wine country.
+      This itinerary isn't designed to show you everything Paso Robles
+      has to offer. <strong>It's designed to help you have a really
+      good two days there.</strong>
+    </p>
+
+    <nav class="itinerary-contents" aria-label="Itinerary contents">
+      <p><strong>Plan Your Paso Robles Getaway</strong></p>
+      <ul>
+        <li><a href="#at-a-glance">At a Glance</a></li>
+        <li><a href="#getting-there">Getting to Paso Robles</a></li>
+        <li><a href="#where-to-stay">Where to Stay</a></li>
+        <li><a href="#day-one">Day 1 — Discover Downtown</a></li>
+        <li><a href="#day-two">Day 2 — Explore Wine Country</a></li>
+        <li><a href="#last-morning">One Last Morning</a></li>
+        <li><a href="#without-wine">Beyond Wine Tasting</a></li>
+        <li><a href="#three-more-hours">If You Have 3 More Hours</a></li>
+        <li><a href="#one-more-day">If You Have One More Day</a></li>
+        <li><a href="#best-time">Best Time to Visit</a></li>
+        <li><a href="#budget">What to Budget</a></li>
+        <li><a href="#before-you-go">Practical Travel Tips</a></li>
+        <li><a href="#faq">Frequently Asked Questions</a></li>
+      </ul>
+    </nav>
+
+    <h2 id="at-a-glance">At a Glance</h2>
+
+    <p><strong>Best for:</strong> Wine lovers, couples, food-focused weekends, and relaxed getaways.</p>
+    <p><strong>Ideal trip:</strong> Two nights / approximately 48 hours.</p>
+    <p><strong>Home base:</strong> Downtown Paso Robles.</p>
+    <p><strong>Getting around:</strong> Walk downtown; use a car with a designated driver or hired transportation for wine country.</p>
+    <p><strong>Reserve ahead:</strong> Hotel, winery tastings, and weekend dinners.</p>
+    <p><strong>Best pace:</strong> Two principal winery experiences in one day, with time to relax.</p>
+    <p><strong>Have more time?</strong> Add Tin City for a few hours or Cambria and the coast for another day.</p>
+
+    <h2 id="getting-there">Getting to Paso Robles</h2>
+
+    <p>
+      Paso Robles is located along US Highway 101 on California's
+      Central Coast, making it a convenient stop between the
+      San Francisco Bay Area and Southern California.
+    </p>
+
+    <h3>Arriving by Car</h3>
+
+    <p>
+      Allow approximately three to four hours from San Francisco
+      or Los Angeles, depending on your starting point, traffic,
+      and stops along the way.
+    </p>
+
+    <p>
+      A car provides the greatest flexibility for exploring the
+      surrounding countryside, although you can leave it parked
+      for much of your time downtown.
+    </p>
+
+    <h3>Arriving by Air</h3>
+
+    <p>
+      San Luis Obispo County Regional Airport (SBP), approximately
+      35 miles south of Paso Robles, is a convenient regional
+      gateway.
+    </p>
+
+    <p>
+      International visitors may find it easier to arrive through
+      San Francisco or Los Angeles and include Paso Robles as
+      part of a longer California road trip.
+    </p>
+
+    <h3>Arriving by Train</h3>
+
+    <p>
+      Amtrak's Coast Starlight serves Paso Robles, with its
+      downtown station located at 800 Pine Street.
+      Check current schedules and arrange transportation for
+      any planned wine-country visits before arriving.
+    </p>
+
+    <p>
+      <a href="https://www.amtrak.com/coast-starlight-train"
+         target="_blank" rel="noopener">
+        Explore Amtrak's Coast Starlight
+      </a>
+    </p>
+
+    <h2 id="where-to-stay">Where to Stay in Paso Robles</h2>
+
+    <p>
+      For this itinerary, staying close to downtown makes sense.
+      You'll be able to leave the car behind for much of the first
+      evening and again after returning from wine country.
+    </p>
+
+    <p class="affiliate-note">
+      <strong>Affiliate disclosure:</strong> Some accommodation
+      links below are affiliate links. We may earn a commission
+      if you book through them, at no additional cost to you.
+      <a href="/affiliate-disclosure/">Learn more.</a>
     </p>
 
     <h3>Paso Robles Inn — Best for Location</h3>
+
     <p>
-      Across from Downtown City Park, this is our first choice for travelers
-      who want restaurants, tasting rooms, and shops within an easy walk.
+      Across from Downtown City Park, this is our first choice
+      for travelers who want restaurants, tasting rooms, and
+      shops within an easy walk.
     </p>
+
     <p>
       <a
         href="https://expedia.com/affiliate/8wZ64iL"
@@ -68,11 +164,18 @@ const pageDescription =
     </p>
 
     <h3>Allegretto Vineyard Resort — Best for a Special Getaway</h3>
+
     <p>
-      A resort-style property surrounded by vineyards, particularly suited
-      to couples or travelers who want the hotel itself to be part of the
-      Paso Robles experience.
+      A resort-style property with vineyard surroundings,
+      particularly suited to couples or travelers who want
+      the hotel itself to be part of the Paso Robles experience.
     </p>
+
+    <p>
+      Choose Allegretto if you prefer a destination resort
+      experience over the convenience of staying downtown.
+    </p>
+
     <p>
       <a
         href="https://expedia.com/affiliate/EmkV7JS"
@@ -84,11 +187,13 @@ const pageDescription =
     </p>
 
     <h3>Oxford Suites Paso Robles — Best for Practical Value</h3>
+
     <p>
-      A comfortable alternative just outside the downtown core, with breakfast
-      included and amenities that can help keep the overall cost of the
-      weekend reasonable.
+      A comfortable alternative just outside the downtown core,
+      with breakfast included and amenities that can help keep
+      the overall cost of the weekend reasonable.
     </p>
+
     <p>
       <a
         href="https://expedia.com/affiliate/6Dc6rQj"
@@ -102,262 +207,695 @@ const pageDescription =
     <h3>Check Paso Robles Hotel Availability</h3>
 
     <p>
-      Compare current lodging options and availability for your travel dates.
+      Compare current lodging options and availability for your
+      travel dates.
     </p>
 
-    <div class="eg-widget" data-widget="search" data-program="us-expedia" data-lobs="stays" data-network="pz" data-camref="1100l6uuC8" data-pubref=""></div>
-    <script class="eg-widgets-script" src="https://creator.expediagroup.com/products/widgets/assets/eg-widgets.js"></script>
+    <div
+      class="eg-widget"
+      data-widget="search"
+      data-program="us-expedia"
+      data-lobs="stays"
+      data-network="pz"
+      data-camref="1100l6uuC8"
+      data-pubref=""
+    ></div>
 
-    <h2>Day 1 — Arrive, Unpack, and Enjoy Downtown</h2>
+    <script
+      class="eg-widgets-script"
+      src="https://creator.expediagroup.com/products/widgets/assets/eg-widgets.js"
+    ></script>
+
+    <h2 id="day-one">Day 1 — Arrive, Unpack, and Enjoy Downtown</h2>
 
     <p>
-      Aim to arrive in Paso Robles during the early afternoon. Check into your
-      hotel, leave the luggage behind, and resist the temptation to immediately
-      start checking attractions off a list.
+      Aim to arrive in Paso Robles during the early afternoon.
+      Check into your hotel when your room is available, leave
+      the luggage behind, and resist the temptation to
+      immediately start checking attractions off a list.
+    </p>
+
+    <h3>Afternoon — Discover Downtown Paso Robles</h3>
+
+    <img
+      src="/images/paso-robles-downtown.webp"
+      alt="Oak trees framing Downtown City Park and the historic Carnegie Library in Paso Robles"
+      class="itinerary-image"
+      width="1280"
+      height="960"
+      loading="lazy"
+      decoding="async"
+    />
+
+    <p class="image-caption">
+      Downtown City Park and the historic Carnegie Library
+      offer a welcoming introduction to Paso Robles.
     </p>
 
     <p>
-      Instead, spend your first few hours getting acquainted with downtown.
-      Walk through <strong>Downtown City Park</strong>, explore the surrounding
-      streets, and choose a downtown tasting room if you'd like an introduction
-      to Paso wine.
+      Begin at Downtown City Park, the heart of the community.
+      Its mature oak trees and historic Carnegie Library
+      provide a reminder that Paso Robles was a destination
+      long before its modern wine industry developed.
     </p>
 
     <p>
-      Leave some unscheduled time. A coffee, an interesting shop, or simply
-      sitting in the park can be as much a part of a getaway as another
-      reservation.
-    </p>
-
-    <h3>Dinner — The Hatch</h3>
-
-    <p>
-      For the first evening, head to <strong>The Hatch Rotisserie & Bar</strong>.
-      Its lively, casual atmosphere and comfort-oriented cooking make it a good
-      arrival-night choice.
+      Explore the surrounding streets, browse independent
+      shops, and choose a downtown tasting room if you'd
+      like an introduction to Paso wine.
     </p>
 
     <p>
-      After dinner, you're already downtown. Have another drink, take a walk,
-      or simply call it an early evening. Tomorrow is the main wine-country day.
+      Leave some unscheduled time. A coffee, an interesting
+      shop, or simply sitting in the park can be as much
+      a part of a getaway as another reservation.
     </p>
 
-    <h2>Day 2 — Into Paso Robles Wine Country</h2>
+    <h3>Dinner — The Hatch Rotisserie &amp; Bar</h3>
 
     <p>
-      Have a substantial breakfast at <strong>Brunch</strong> downtown before
-      heading out. Today you'll need the car, but we've deliberately kept the
-      itinerary to <strong>two principal winery experiences</strong>.
+      For the first evening, head to The Hatch Rotisserie
+      &amp; Bar. Its lively, casual atmosphere and
+      comfort-oriented cooking make it a good arrival-night
+      choice.
+    </p>
+
+    <p>
+      After dinner, you're already downtown. Take a walk,
+      enjoy another drink if you are not driving, or simply
+      call it an early evening. Tomorrow is the main
+      wine-country day.
+    </p>
+
+    <h2 id="day-two">Day 2 — Into Paso Robles Wine Country</h2>
+
+    <p>
+      Have a substantial breakfast at Brunch downtown before
+      heading out. Today you'll be exploring the countryside,
+      but we've deliberately kept the itinerary to two
+      principal winery experiences.
+    </p>
+
+    <p class="travel-note">
+      <strong>Plan transportation before leaving:</strong>
+      Arrange a sober designated driver or professional
+      wine-country transportation. Do not depend on finding
+      a rideshare at a remote winery at short notice.
     </p>
 
     <h3>Late Morning — DAOU Vineyards</h3>
 
     <p>
-      Begin at <strong>DAOU Vineyards</strong>. The elevated setting and
-      expansive views make this a memorable introduction to Paso Robles wine
-      country. Rather than rushing through a tasting, make this one of the
-      experiences of the weekend.
+      Begin at DAOU Vineyards in the hills west of Paso Robles.
+      Its elevated setting and expansive views make this
+      a memorable introduction to the region.
     </p>
 
     <p>
-      Allow enough time to enjoy the setting as well as the wines.
+      Rather than rushing through a tasting, allow time to
+      appreciate the landscape and explore wines associated
+      with the region's distinctive growing conditions.
+    </p>
+
+    <p>
+      Allow approximately 90 minutes for your visit and
+      confirm tasting options, prices, and availability
+      before making a reservation.
+    </p>
+
+    <p>
+      <a href="https://daouvineyards.com/"
+         target="_blank" rel="noopener">
+        Explore DAOU Vineyards
+      </a>
     </p>
 
     <h3>Lunch — Halter Ranch</h3>
 
     <p>
-      From DAOU, continue through the Adelaida area toward
-      <strong>Halter Ranch</strong>.
+      From DAOU, continue through the Adelaida countryside
+      toward Halter Ranch.
     </p>
 
     <p>
-      We're stopping here primarily for lunch rather than adding another full
-      tasting. That's intentional. A leisurely meal breaks up the day and keeps
-      two winery tastings from turning into three or four.
+      Our suggested lunch stop is Restaurant Alice at
+      Halter Ranch. The intention is to enjoy a leisurely
+      meal rather than add another full wine tasting.
     </p>
 
     <p>
-      More isn't necessarily better—especially when you're supposed to be on
-      vacation.
+      Confirm restaurant opening days, lunch availability,
+      and reservation requirements for your travel dates.
+      If lunch is unavailable, arrange an alternative
+      meal before heading into wine country.
+    </p>
+
+    <p>
+      More isn't necessarily better—especially when you're
+      supposed to be on vacation.
+    </p>
+
+    <p>
+      <a href="https://www.halterranch.com/"
+         target="_blank" rel="noopener">
+        Explore dining at Halter Ranch
+      </a>
     </p>
 
     <h3>Afternoon — Tablas Creek Vineyard</h3>
 
-<img
-  src="/images/Tablas_Creek_Vineyard_-_Stierch_-_July_2019_01.jpg"
-  alt="Entrance sign at Tablas Creek Vineyard in Paso Robles"
-  class="itinerary-image"
-/>
+    <img
+      src="/images/Tablas_Creek_Vineyard_-_Stierch_-_July_2019_01.jpg"
+      alt="Entrance sign at Tablas Creek Vineyard in Paso Robles"
+      class="itinerary-image"
+      loading="lazy"
+      decoding="async"
+    />
 
     <p>
-      After lunch, continue to <strong>Tablas Creek Vineyard</strong>.
+      After lunch, continue to Tablas Creek Vineyard.
     </p>
 
     <p>
-      This provides an excellent contrast to the morning. Where DAOU delivers
-      dramatic scenery and a polished destination experience, Tablas Creek
-      offers the opportunity to explore Rhône-style wines and learn more about
-      the vineyard and its approach to farming.
-    </p>
-
-    <p>Take your time, then head back downtown.</p>
-
-    <blockquote>
-      <p>
-        <strong>A practical note:</strong> If you're tasting wine, plan
-        transportation accordingly. A designated driver or hired
-        transportation can make the day both safer and more relaxing.
-      </p>
-    </blockquote>
-
-    <h3>Take a Break</h3>
-
-    <p>
-      Once you're back at the hotel, stop. Don't immediately head somewhere
-      else.
+      This provides an excellent contrast to the morning.
+      Where DAOU delivers dramatic scenery and a polished
+      destination experience, Tablas Creek offers the
+      opportunity to explore Rhône-style wines and learn
+      more about the relationship between farming, the
+      vineyard, and the wines it produces.
     </p>
 
     <p>
-      Give yourself an hour or two to relax, change clothes, or simply do
-      nothing. We've deliberately built that space into the itinerary.
+      Take your time, ask questions, and enjoy the
+      differences between these two distinctive producers.
+      Then head back downtown.
+    </p>
+
+    <p>
+      <a href="https://tablascreek.com/"
+         target="_blank" rel="noopener">
+        Explore Tablas Creek Vineyard
+      </a>
+    </p>
+
+    <p>
+      Interested in discovering more of California's
+      independent wineries and wine regions?
+      Our sister publication,
+      <a href="https://cacorks.com/"
+         target="_blank" rel="noopener">California Corks</a>,
+      offers additional wine-country discovery.
+    </p>
+
+    <h3>Late Afternoon — Take a Break</h3>
+
+    <p>
+      Once you're back at the hotel, stop. Don't immediately
+      head somewhere else.
+    </p>
+
+    <p>
+      Give yourself an hour or two to relax, change clothes,
+      or simply do nothing. We've deliberately built that
+      space into the itinerary.
     </p>
 
     <h3>Dinner — Il Cortile Ristorante</h3>
 
     <p>
-      For the second evening, make dinner the final major experience of the
-      day. <strong>Il Cortile Ristorante</strong> provides a more
-      special-occasion atmosphere than our first night's dinner, with
-      Italian-inspired cooking and a wine list that keeps the connection to
-      Paso Robles going.
-    </p>
-
-    <p>Reservations are worth making in advance.</p>
-
-    <h2>One Last Morning — Coffee, a Walk, and Home</h2>
-
-    <p>
-      There's no need to turn departure morning into another packed itinerary.
+      For the second evening, make dinner the final major
+      experience of the day.
     </p>
 
     <p>
-      Head to <strong>Spearhead Coffee</strong>, grab coffee and something
+      Il Cortile Ristorante provides a more special-occasion
+      atmosphere than our first night's dinner, with
+      Italian-inspired cooking and a wine list that keeps
+      the connection to Paso Robles going.
+    </p>
+
+    <p>
+      Reservations are worth making in advance, especially
+      on weekends.
+    </p>
+
+    <h2 id="last-morning">One Last Morning — Coffee, a Walk, and Home</h2>
+
+    <p>
+      There's no need to turn departure morning into
+      another packed itinerary.
+    </p>
+
+    <p>
+      Head to Spearhead Coffee, grab coffee and something
       light, and take one last walk through downtown.
+      If something caught your eye on the first afternoon,
+      this is your chance to return.
     </p>
 
     <p>
-      If something caught your eye on the first afternoon, this is your chance
-      to return. Otherwise, pack the car and start home before the day
-      disappears.
+      Otherwise, pack the car and start home before the
+      day disappears.
+    </p>
+
+    <h2 id="without-wine">Things to Do in Paso Robles Beyond Wine Tasting</h2>
+
+    <p>
+      Wine may be one of the principal reasons people
+      discover Paso Robles, but it doesn't have to
+      define your entire visit.
+    </p>
+
+    <h3>Discover California Olive Oil</h3>
+
+    <p>
+      An olive oil tasting at Pasolivo offers a different
+      way to explore the agricultural character of the
+      region. It is an appealing alternative to a winery
+      visit for travelers interested in food and local
+      producers.
     </p>
 
     <p>
-      And if you aren't quite ready to leave Paso Robles? That's where our next
-      two options come in.
+      <a href="https://www.pasolivo.com/"
+         target="_blank" rel="noopener">
+        Explore Pasolivo
+      </a>
     </p>
 
-    <h2>If You Have 3 More Hours</h2>
+    <h3>Experience Sensorio</h3>
+
+    <p>
+      Sensorio brings art, light, and the surrounding
+      landscape together in an outdoor evening experience.
+      Consider it as an alternative to part of your evening
+      itinerary rather than another activity to squeeze
+      into an already full day.
+    </p>
+
+    <p>
+      Check current exhibitions, admission prices,
+      opening dates, and ticket availability before visiting.
+    </p>
+
+    <p>
+      <a href="https://sensoriopaso.com/"
+         target="_blank" rel="noopener">
+        Explore Sensorio
+      </a>
+    </p>
+
+    <h3>Enjoy a Slower Afternoon</h3>
+
+    <p>
+      Browse downtown shops, explore local history,
+      arrange a spa experience, or spend additional
+      time enjoying your accommodation.
+    </p>
+
+    <p>
+      A memorable Paso Robles getaway does not require
+      a wine tasting at every stop.
+    </p>
+
+    <h2 id="three-more-hours">If You Have 3 More Hours</h2>
 
     <h3>Explore Tin City</h3>
 
     <p>
-      If your schedule gives you a few more hours, head to
-      <strong>Tin City</strong>, just south of downtown Paso Robles.
+      If your schedule gives you a few more hours,
+      head to Tin City, just south of downtown Paso Robles.
     </p>
 
     <p>
-      Rather than planning another full afternoon, use Tin City as a flexible
-      final stop. Choose one winery, brewery, food producer, or artisan business
-      that interests you, have something to eat if you're hungry, and enjoy the
-      extra time before starting home.
+      This collection of independent producers offers
+      a different perspective on the region, bringing
+      together wineries, breweries, food producers,
+      and other artisan businesses.
     </p>
 
     <p>
-      This works especially well when you've checked out of your hotel in the
-      morning but don't need to leave Paso Robles until later in the afternoon.
+      Rather than planning another full afternoon,
+      choose one or two businesses that interest you,
+      have something to eat if you're hungry, and
+      enjoy the extra time before starting home.
     </p>
 
-    <h2>If You Have One More Day</h2>
+    <p>
+      This works especially well when you've checked
+      out of your hotel but don't need to leave
+      Paso Robles until later in the afternoon.
+    </p>
+
+    <h2 id="one-more-day">If You Have One More Day</h2>
 
     <h3>Trade Wine Country for the Coast</h3>
 
-<img
-  src="/images/Cambria,_CA_20.jpg"
-  alt="Rocky Pacific coastline near Cambria on California's Central Coast"
-  class="itinerary-image"
-/>
+    <img
+      src="/images/Cambria,_CA_20.jpg"
+      alt="Rocky Pacific coastline near Cambria on California's Central Coast"
+      class="itinerary-image"
+      loading="lazy"
+      decoding="async"
+    />
 
     <p>
-      If this is a three-day weekend, don't simply add another full day of wine
-      tasting. Use the extra time to see a completely different side of
-      California.
+      If this is a three-day weekend, don't simply
+      add another full day of wine tasting. Use the
+      extra time to see a completely different side
+      of California.
     </p>
 
     <p>
-      Head west toward <strong>Cambria and the Highway 1 coast</strong>. The
-      drive gradually takes you from vineyard-covered hills toward the Pacific.
+      Head west toward Cambria and the Highway 1 coast.
+      The drive gradually takes you from vineyard-covered
+      hills toward the Pacific.
     </p>
 
     <p>
-      Spend time exploring Cambria, walk along <strong>Moonstone Beach</strong>,
-      have lunch, and enjoy an afternoon that doesn't require much scheduling.
+      Spend time exploring Cambria, walk along Moonstone
+      Beach, have lunch, and enjoy an afternoon that
+      doesn't require much scheduling.
     </p>
 
     <p>
-      Travelers wanting a major attraction can instead continue north toward
-      <strong>Hearst Castle</strong>. Because tours require more planning and
-      availability can vary, treat this as an advance-reservation option rather
-      than something to squeeze into the day at the last minute.
+      <a href="/itineraries/cambria/">
+        Explore our 48 Hours in Cambria itinerary
+      </a>.
+    </p>
+
+    <h3>Consider Hearst Castle</h3>
+
+    <p>
+      Travelers wanting a major historical attraction
+      can instead continue north toward Hearst Castle.
+      Because tours require more planning and availability
+      can vary, treat this as an advance-reservation
+      option rather than something to squeeze into
+      the day at the last minute.
     </p>
 
     <p>
-      Depending on where home is, you can return to Paso Robles for another
-      night or continue your journey from the coast.
-    </p>
-
-    <h2>Before You Go</h2>
-
-    <p>
-      Paso Robles can be busy, particularly on weekends. Make the important
-      reservations before leaving home—<strong>hotel, winery tastings, and
-      Saturday dinner</strong>—but don't schedule every hour.
+      <a href="https://hearstcastle.org/"
+         target="_blank" rel="noopener">
+        Explore Hearst Castle tours
+      </a>
     </p>
 
     <p>
-      Wine-country roads can also take longer to navigate than a map suggests.
-      Keeping the principal winery stops in the same general part of wine
-      country is one reason we've deliberately limited Day 2.
+      Depending on where home is, you can return to
+      Paso Robles for another night or continue your
+      journey from the coast.
+    </p>
+
+    <h2 id="best-time">Best Time to Visit Paso Robles</h2>
+
+    <h3>Spring — March Through May</h3>
+
+    <p>
+      Spring can bring green hills, wildflowers, and
+      comfortable conditions for exploring the countryside.
+      It is an appealing season for travelers who enjoy
+      scenery and outdoor experiences.
+    </p>
+
+    <h3>Summer — June Through August</h3>
+
+    <p>
+      Summer brings long days and potentially very hot
+      afternoons. Schedule outdoor activities earlier
+      in the day and allow time to relax during the
+      afternoon heat.
+    </p>
+
+    <h3>Fall — September Through November</h3>
+
+    <p>
+      Harvest season brings activity to wine country,
+      along with changing vineyard colors as autumn
+      progresses. Popular weekends can be busy,
+      so reserve accommodations and tastings early.
+    </p>
+
+    <h3>Winter — December Through February</h3>
+
+    <p>
+      Winter offers the possibility of quieter visits
+      and better accommodation value outside holidays
+      and special events. Expect cooler weather,
+      occasional rain, and potentially reduced
+      operating hours.
+    </p>
+
+    <h2 id="budget">What Does a Paso Robles Weekend Cost?</h2>
+
+    <p>
+      A Paso Robles getaway can range from a relatively
+      modest weekend to a special-occasion escape.
+      Accommodation, dining choices, and wine-country
+      experiences will have the greatest influence
+      on your overall budget.
     </p>
 
     <p>
-      Most importantly, remember what this trip is supposed to be:
+      The following illustrative planning estimates
+      are for two adults staying two nights.
     </p>
 
-    <p><strong>48 hours away—not 48 hours of appointments.</strong></p>
+    <div class="table-scroll">
+      <table class="budget-table">
+        <thead>
+          <tr>
+            <th scope="col">Travel Style</th>
+            <th scope="col">Estimated Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Value-conscious getaway</td>
+            <td>$560</td>
+          </tr>
+          <tr>
+            <td>Comfortable getaway</td>
+            <td>$1,110</td>
+          </tr>
+          <tr>
+            <td>Special-occasion getaway</td>
+            <td>$2,080</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-    <h2>Related Getaways</h2>
+    <p class="small-note">
+      Estimates are in US dollars and are intended for
+      planning purposes, not as current price quotations.
+      They exclude taxes, fees, gratuities, flights,
+      rental cars, hired transportation, and travel
+      to and from Paso Robles.
+    </p>
 
     <p>
-  Continue exploring the Central Coast with nearby getaways to
-  <a href="/itineraries/cambria/">Cambria</a>,
-  <a href="/itineraries/san-luis-obispo/">San Luis Obispo</a>, and
-  <a href="/itineraries/morro-bay/">Morro Bay</a>.
-</p>
+      To keep costs manageable, consider visiting
+      midweek, choosing accommodations with breakfast
+      included, and limiting paid tastings to the
+      experiences that interest you most.
+    </p>
 
-<section class="photo-credits">
-  <h2>Photo Credits</h2>
-  <p>
-   Paso Robles vineyard: <a href="https://commons.wikimedia.org/wiki/File:Paso_Vineyard.jpg">Pasowine</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, via Wikimedia Commons.<br />
-Tablas Creek Vineyard: <a href="https://commons.wikimedia.org/wiki/File:Tablas_Creek_Vineyard_-_Stierch_-_July_2019_01.jpg">Sarah Stierch</a>, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, via Wikimedia Commons.<br />
-Moonstone Beach, Cambria: <a href="https://commons.wikimedia.org/wiki/File:Cambria,_CA_20.jpg">Stilfehler</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, via Wikimedia Commons.<br />
-Images may be cropped for website display.
-  </p>
-</section>
+    <h2 id="before-you-go">Practical Tips for Visiting Paso Robles</h2>
+
+    <ul class="practical-list">
+      <li>
+        Reserve your accommodation, principal winery
+        experiences, and weekend dinners before leaving home.
+      </li>
+      <li>
+        Confirm opening days and hours directly with
+        wineries, restaurants, and attractions.
+      </li>
+      <li>
+        Arrange safe wine-country transportation in advance.
+      </li>
+      <li>
+        Allow additional driving time on winding
+        rural roads.
+      </li>
+      <li>
+        Download offline maps before exploring
+        the countryside.
+      </li>
+      <li>
+        Bring water, sun protection, and layers
+        appropriate for the season.
+      </li>
+      <li>
+        Check accessibility and dietary requirements
+        directly with individual businesses.
+      </li>
+    </ul>
+
+    <p>
+      Most importantly, remember what this trip
+      is supposed to be:
+    </p>
+
+    <p>
+      <strong>48 hours away—not 48 hours of appointments.</strong>
+    </p>
+
+    <h2 id="faq">Frequently Asked Questions About Paso Robles</h2>
+
+    <h3>Is two days enough to visit Paso Robles?</h3>
+
+    <p>
+      Yes. Two nights provide enough time to enjoy
+      downtown, experience two distinctive wineries,
+      discover local restaurants, and enjoy a relaxed
+      departure morning.
+    </p>
+
+    <h3>Do I need a car in Paso Robles?</h3>
+
+    <p>
+      Downtown is walkable, but many wineries and
+      countryside attractions require transportation.
+      Visitors without a car should arrange professional
+      transportation or a guided experience in advance.
+    </p>
+
+    <h3>How many wineries should I visit in one day?</h3>
+
+    <p>
+      We recommend two principal winery experiences
+      for a relaxed day, with a proper lunch break
+      and sufficient travel time between stops.
+    </p>
+
+    <h3>Is Paso Robles worth visiting if I don't drink wine?</h3>
+
+    <p>
+      Absolutely. Downtown dining, olive oil tasting,
+      outdoor art, local history, shopping, and nearby
+      coastal communities provide plenty of alternatives.
+    </p>
+
+    <h3>Is Paso Robles a good destination for couples?</h3>
+
+    <p>
+      Paso Robles combines scenic countryside,
+      distinctive accommodations, excellent dining,
+      and opportunities to slow down, making it
+      particularly well suited to a couples getaway.
+    </p>
+
+    <h3>Should I stay downtown or in wine country?</h3>
+
+    <p>
+      Downtown is generally the more convenient choice
+      for restaurants and evening walks. A vineyard
+      resort or countryside accommodation may be
+      preferable if relaxation at the property is
+      an important part of your getaway.
+    </p>
+
+    <h2>More California Central Coast Getaways</h2>
+
+    <p>
+      Paso Robles is just one way to discover California's
+      Central Coast. Continue exploring with our nearby
+      destination guides.
+    </p>
+
+    <ul>
+      <li>
+        <a href="/itineraries/cambria/">48 Hours in Cambria</a>
+      </li>
+      <li>
+        <a href="/itineraries/san-luis-obispo/">48 Hours in San Luis Obispo</a>
+      </li>
+      <li>
+        <a href="/itineraries/morro-bay/">48 Hours in Morro Bay</a>
+      </li>
+    </ul>
+
+    <p class="closing-line">
+      <strong>Discover More. Rush Less.</strong>
+    </p>
+
+    <section class="editorial-note">
+      <h2>About This Guide</h2>
+
+      <p>
+        Prepared by the editorial team at 48 Hours in
+        California. Our itineraries emphasize practical
+        travel planning, thoughtful recommendations,
+        and a relaxed approach to discovering California.
+      </p>
+
+      <p>
+        Recommendations are editorial selections based
+        on destination research and itinerary suitability.
+        Prices, hours, and availability may change.
+      </p>
+
+      <p class="small-note">
+        Editorial update: November 2026.
+        <a href="/about/">About our publication</a>.
+      </p>
+    </section>
+
+    <section class="photo-credits">
+      <h2>Photo Credits</h2>
+
+      <p>
+        Paso Robles vineyard:
+        <a href="https://commons.wikimedia.org/wiki/File:Paso_Vineyard.jpg">Pasowine</a>,
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>,
+        via Wikimedia Commons.
+        <br />
+
+        Downtown City Park and Carnegie Library:
+        <a href="https://commons.wikimedia.org/wiki/File:Paso_Robles_-_Stierch_-_July_2019.jpg">Sarah Stierch</a>,
+        <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>,
+        via Wikimedia Commons. Converted to WebP.
+        <br />
+
+        Tablas Creek Vineyard:
+        <a href="https://commons.wikimedia.org/wiki/File:Tablas_Creek_Vineyard_-_Stierch_-_July_2019_01.jpg">Sarah Stierch</a>,
+        <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>,
+        via Wikimedia Commons.
+        <br />
+
+        Moonstone Beach, Cambria:
+        <a href="https://commons.wikimedia.org/wiki/File:Cambria,_CA_20.jpg">Stilfehler</a>,
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>,
+        via Wikimedia Commons.
+        <br />
+
+        Images may be cropped for website display.
+      </p>
+    </section>
 
   </article>
 </Base>
 
 <style>
+  .eyebrow {
+    color: var(--terracotta);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  .itinerary-subtitle {
+    font-size: clamp(1.25rem, 2.5vw, 1.7rem);
+    color: var(--muted);
+    line-height: 1.45;
+    margin-bottom: 1.5rem;
+  }
+
   .itinerary-hero {
     width: 100%;
     max-height: 400px;
@@ -374,5 +912,120 @@ Images may be cropped for website display.
     display: block;
     margin: 1.25rem 0 1.75rem;
     border-radius: 12px;
+  }
+
+  .image-caption {
+    color: var(--muted);
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: -1rem;
+  }
+
+  .itinerary-contents {
+    background: var(--cream);
+    border: 1px solid var(--sand);
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .itinerary-contents ul {
+    padding-left: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .itinerary-contents li {
+    margin-bottom: 0.35rem;
+  }
+
+  .itinerary-contents a {
+    text-decoration: none;
+  }
+
+  .itinerary-contents a:hover {
+    text-decoration: underline;
+  }
+
+  .affiliate-note {
+    font-size: 0.9rem;
+    color: var(--muted);
+    border-left: 3px solid var(--sand);
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .travel-note {
+    background: var(--cream);
+    border-left: 4px solid var(--terracotta);
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0;
+  }
+
+  .table-scroll {
+    overflow-x: auto;
+    margin: 1.5rem 0;
+  }
+
+  .budget-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .budget-table th,
+  .budget-table td {
+    padding: 0.85rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--sand);
+  }
+
+  .budget-table th {
+    background: var(--cream);
+  }
+
+  .budget-table td:last-child {
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .small-note {
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  .practical-list li {
+    margin-bottom: 0.65rem;
+  }
+
+  .closing-line {
+    font-size: 1.35rem;
+    color: var(--terracotta-dark);
+    margin: 2rem 0;
+  }
+
+  .editorial-note,
+  .photo-credits {
+    border-top: 1px solid var(--sand);
+    margin-top: 2.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .photo-credits p {
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+
+  h2[id] {
+    scroll-margin-top: 24px;
+  }
+
+  @media (max-width: 760px) {
+    .itinerary-contents {
+      padding: 0.85rem 1rem;
+    }
+
+    .budget-table th,
+    .budget-table td {
+      padding: 0.65rem;
+    }
   }
 </style>
